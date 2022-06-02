@@ -1,0 +1,334 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/bg_body.png);
+}
+
+.wrap {
+    width: 1200px;
+    /*background-color: greenyellow;*/
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 210px;
+    background-image: url(images/bg_head.jpg);
+    height: 848px;
+    background-size: 100% 100%;
+    padding: 50px 40px 0 40px;
+    box-sizing: border-box;
+}
+
+header h1 a {
+    color: #fff;
+    font-size: 38px;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+nav ul li {
+    margin: 20px auto;
+    width: 350px;
+    /*outline: 2px solid yellow;*/
+}
+
+nav ul li a {
+    padding: 10px 0;
+    display: block;
+    overflow: hidden;
+    color: #fff;
+}
+
+nav ul .history>a {
+    position: relative;
+}
+
+nav ul .history>a::before {
+    content: "Brand history";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+nav ul .history>a::after {
+    content: "브랜드 히스토리";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s;
+    text-decoration: 2px underline #B09461;
+}
+
+nav ul .history>a:hover::before {
+    top: 100%;
+    left: 0;
+}
+
+nav ul .history>a:hover::after {
+    top: 0;
+    left: 0;
+}
+
+nav ul .innovation>a {
+    position: relative;
+}
+
+nav ul .innovation>a::before {
+    content: "Virtelle innovation";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+nav ul .innovation>a::after {
+    content: "비트렐 이노베이션";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s;
+    text-decoration: 2px underline #B09461;
+}
+
+nav ul .innovation>a:hover::before {
+    top: 100%;
+    left: 0;
+}
+
+nav ul .innovation>a:hover::after {
+    top: 0;
+    left: 0;
+}
+
+nav ul .new>a {
+    position: relative;
+}
+
+nav ul .new>a::before {
+    content: "New pattern";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+nav ul .new>a::after {
+    content: "뉴 패턴";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s;
+    text-decoration: 2px underline #B09461;
+}
+
+nav ul .new>a:hover::before {
+    top: 100%;
+    left: 0;
+}
+
+nav ul .new>a:hover::after {
+    top: 0;
+    left: 0;
+}
+
+nav ul .pattern>a {
+    position: relative;
+}
+
+nav ul .pattern>a::before {
+    content: "Pattern";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+nav ul .pattern>a::after {
+    content: "패턴";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s;
+    text-decoration: 2px underline #B09461;
+}
+
+nav ul .pattern>a:hover::before {
+    top: 100%;
+    left: 0;
+}
+
+nav ul .pattern>a:hover::after {
+    top: 0;
+    left: 0;
+}
+
+nav ul .event>a {
+    position: relative;
+}
+
+nav ul .event>a::before {
+    content: "Event";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+nav ul .event>a::after {
+    content: "이벤트";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s;
+    text-decoration: 2px underline #B09461;
+}
+
+nav ul .event>a:hover::before {
+    top: 100%;
+    left: 0;
+}
+
+nav ul .event>a:hover::after {
+    top: 0;
+    left: 0;
+}
+
+
+/*nav 메뉴 위치조절*/
+section {
+    width: 960px;
+    height: 848px;
+    background-image: url(images/bg_main.gif);
+    position: relative;
+}
+
+section a {
+    /* text-indent: -9999px; */
+    display: block;
+    position: absolute;
+}
+
+section a.con_book {
+    width: 296px;
+    height: 320px;
+    background-image: url(images/img_main01.png);
+    transition: all 0.5s;
+}
+
+section a.con_book:hover {
+    background-position: right;
+}
+
+section a.con_history {
+    width: 295px;
+    height: 314px;
+    background-image: url(images/img_main02.png);
+    right: 0;
+    top: 267px;
+    transition: all 0.5s;
+}
+
+section a.con_history:hover {
+    background-position: right;
+}
+
+section a.con_movie {
+    width: 296px;
+    height: 222px;
+    background-image: url(images/img_main03.png);
+    bottom: 120px;
+    transition: all 0.5s;
+}
+
+section a.con_movie:hover {
+    background-position: right;
+}
+
+section a.con_inno {
+    width: 369px;
+    height: 120px;
+    background-image: url(images/img_main04.png);
+    bottom: 0;
+    left: 296px;
+    transition: all 0.5s;
+}
+
+section a.con_inno:hover {
+    background-position: right;
+}
+
+section a.con_event {
+    background-image: url(images/img_main05.png);
+    width: 160px;
+    height: 268px;
+    bottom: 0;
+    right: 136px;
+    transition: all 0.5s;
+}
+
+section a.con_event:hover {
+    background-position: right;
+}
+
+
+footer {
+    /*clear: both;*/
+    width: 150px;
+    position: absolute;
+    left: 30px;
+    top: 640px;
+    text-indent: -9999px;
+}
+
+footer address {
+    background-image: url(images/bg_footer.png);
+    background-repeat: no-repeat;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    background-image: url(images/bg_footer.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+footer .sns a {
+    background-image: url(images/bg_footer.png);
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+
+footer .sns a:first-child {
+    margin-right: 10px;
+    background-position: 0px 36px;
+}
+
+footer .sns a:last-child {
+    background-position: -46px 36px;
+}
