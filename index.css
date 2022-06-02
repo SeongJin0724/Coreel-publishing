@@ -298,22 +298,19 @@ footer {
     position: absolute;
     left: 30px;
     top: 640px;
-    text-indent: -9999px;
 }
 
 footer address {
-    background-image: url(images/bg_footer.png);
-    background-repeat: no-repeat;
-    height: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.404);
+    font-size: 14px;
 }
 
 footer p {
-    background-image: url(images/bg_footer.png);
-    background-repeat: no-repeat;
-    background-position: 0 50%;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.404);
 }
 
 footer .sns a {
